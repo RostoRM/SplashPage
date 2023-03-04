@@ -28,6 +28,7 @@ const setLocalStorage = (index) => {
 
 const changeBackground = (number) => {
   // Check if Background Already Showing
+  let currentBackground = false;
   let previousBackground;
 
   if (body.className) {
@@ -41,7 +42,7 @@ const changeBackground = (number) => {
   switch (number) {
     case '1':
       if (previousBackground === 'background-1') {
-        false;
+        currentBackground;
         setLocalStorage(0);
       } else {
         body.classList.add('background-1');
@@ -50,7 +51,7 @@ const changeBackground = (number) => {
       break;
     case '2':
       if (previousBackground === 'background-2') {
-        false;
+        currentBackground;
         setLocalStorage(0);
       } else {
         stylingBackground2();
@@ -59,7 +60,7 @@ const changeBackground = (number) => {
       break;
     case '3':
       if (previousBackground === 'background-3') {
-        false;
+        currentBackground;
         setLocalStorage(0);
       } else {
         stylingBackground3();
